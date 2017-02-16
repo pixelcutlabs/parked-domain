@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<p>Click the button to display the URL of the document.</p>
+<p id="page"></p>
 
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
 
 <script>
-function myFunction() {
+function page() {
     var x = document.URL;
-    document.getElementById("demo").innerHTML = x;
+    document.getElementById("page").innerHTML = x;
 }
+window.onload = page;
 </script>
 
 </body>
